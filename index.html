@@ -197,6 +197,17 @@
 	<!-- Copyright -->
 		<div id="copyright" class="container">
 			Powered by: <a href="https://templated.co/">TEMPLATED</a>
+
+<p>This website has been opened <span id="counter">0</span> times.</p>
+  <script>
+    var counter = 0;
+    function incrementCounter() {
+      counter++;
+      document.getElementById("counter").innerHTML = counter;
+    }
+    window.onload = incrementCounter;
+  </script>
+			
 		</div>
 
 
