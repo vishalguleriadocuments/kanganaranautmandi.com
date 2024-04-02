@@ -198,14 +198,20 @@
 		<div id="copyright" class="container">
 			Powered by: <a href="https://templated.co/">TEMPLATED</a>
 
-<p>This website has been opened <span id="counter">0</span> times.</p>
+ <p id="load-count"></p>
+
   <script>
-    var counter = 0;
-    function incrementCounter() {
-      counter++;
-      document.getElementById("counter").innerHTML = counter;
+    // Get a reference to the element
+    var element = document.getElementById('load-count');
+
+    // Code to track page loads (same as before)
+    var pageLoadCount = localStorage.getItem('pageLoadCount');
+    // ... rest of the JavaScript code as before ...
+
+    // Update the element content with the load count
+    if (element) {
+      element.textContent = "Page loads: " + pageLoadCount;
     }
-    window.onload = incrementCounter;
   </script>
 			
 		</div>
